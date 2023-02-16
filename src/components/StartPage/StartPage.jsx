@@ -21,9 +21,3 @@ export const StartPage = () => {
   );
 };
 <button class="to-game reset">Начать игру</button>;
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/Vlada-WoodyChick/learnReact.git
-git push -u origin main
