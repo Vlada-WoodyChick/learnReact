@@ -1,0 +1,129 @@
+body {
+
+    background-color: whitesmoke;
+    padding: 5px 1;
+}
+
+.mainCover {
+    position: relative;
+    width: 1920px;
+    height: 1059px;
+    background: darkgreen;
+    /* Top: 114px;
+    Left: 4200px; */
+}
+
+
+.mainStartPage {
+    box-sizing: border-box;
+    position: absolute;
+    width: 593px;
+    height: 249px;
+    left: 664px;
+    top: 388px;
+
+    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    backdrop-filter: blur(15.5px);
+
+
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+}
+
+.gamename {
+    width: 423px;
+    height: 116px;
+    margin: 66px auto 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    align-items: center;
+    color:chocolate
+
+    
+}
+.word { 
+
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 53px;
+    line-height: 58px;
+    /* text-align: center; */
+    text-transform: uppercase;
+
+    /* white */
+    color: #FFFFFF;
+
+}
+
+.startGame {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 320px;
+    height: 54px;
+    left: 800px;
+    top: 750px;
+
+    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%,
+            rgba(36, 197, 219, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave 
+     as expected */
+    ;
+    backdrop-filter: blur(15.5px);
+
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+}
+
+
+
+
+.footerMenuMainCover {
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 959px;
+    background: #192F2D;
+}
+
+/* .annieSprattBackGround {
+    position: absolute;
+    width: 1281px;
+    height: 1920px;
+    left: 1925px;
+    top: 1282px;
+    background: url(annie-spratt-zh7GEuORbUw-unsplash.jpg);
+    transform: matrix(0, -1, -1, 0, 0, 0);
+} */
+
+.rectangle1273 {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 320px;
+    height: 54px;
+    left: 800px;
+    top: 750px;
+
+    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    backdrop-filter: blur(15.5px);
+
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 30px;
+}
+
+/* Помогите бабушке нарядить елку */
+
+
+
+
+
+/* 1 */
