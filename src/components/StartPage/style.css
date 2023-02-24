@@ -1,132 +1,158 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&display=swap');
 
-    background-color: whitesmoke;
-    padding: 5px 1px;
+
+.footer {
+  position: absolute;
+  width: 1920px;
+  height: 100px;
+  left: 0px;
+  top: 959px;
+  background: #192F2D;
 }
 
-.mainCover {
-    position: relative;
-    width: 1920px;
-    height: 1059px;
-    background: white;
-
+.footer_logo_cont {
+  position: absolute;
+  left: 1602;
+  top: 960.8;
 }
 
-/*поправить borderMain он все рвно не работает */
+.footer_logo {
+  position: absolute;
 
-.rectangle1272 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 593px;
-    height: 249px;
-    left: 664px;
-    top: 388px;
+  left: 0%;
+  right: 33.66%;
+  top: 3.21%;
+  bottom: -0.05%;
 
-    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-    backdrop-filter: blur(15.5px);
-
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 30px;
+  /* white */
+  background: #FFFFFF;
 }
 
-/*gameName изменен*/
-.gameName {
 
-    margin: 63px auto;
-    width: 423px;
-    height: 116px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+
+.ballMain_1 {
+  position: absolute;
+  width: 418px;
+  height: 768px;
+  left: 416px;
+  top: 1px;
+
+  background: url(1.png);
 }
 
-.words_11, .words_12 {
-    font-family: 'Neucha';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 43px;
-    text-align: center;
-    text-transform: uppercase;
-    color: rgb(224, 52, 52);
+.ballMain_2 {
+  position: absolute;
+  width: 246px;
+  height: 446px;
+  left: 1116px;
+  top: 100px;
+
+  background: url(1.png);
 }
 
-.rectangle1273 {
-    box-sizing: border-box;
-    position: absolute;
-    width: 320px;
-    height: 54px;
-    left: 800px;
-    top: 750px;
+.contanierGameTitle {
+  box-sizing: border-box;
+  position: absolute;
+  width: 593px;
+  height: 249px;
+  left: 664px;
+  top: 388px;
+  background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+  ;
+  backdrop-filter: blur(15.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 30px;
+}
 
-    background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%, rgba(36, 197, 219, 0) 100%)
-        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
-    ;
-    backdrop-filter: blur(15.5px);
+.contanierH1 {
+  position: absolute;
+  width: 423px;
+  height: 116px;  
+  top: 44px;
+  left: 83px;  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ }
 
-    /* Note: backdrop-filter has minimal browser support */
-    border-radius: 30px;
+.textH1 {
+  font-family: 'Neucha';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 53px;
+  line-height: 58px;
+  text-align: center;
+  text-transform: uppercase;
+  /* white */
+  color: #FFFFFF;
+}
+
+.startGameButton {
+  box-sizing: border-box;
+  position: absolute;
+  width: 320px;
+  height: 54px;
+  left: 800px;
+  top: 750px;
+  background: radial-gradient(118.88% 606.86% at 0% 0%, rgba(36, 197, 219, 0.15) 0%,
+      rgba(36, 197, 219, 0) 100%)
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave
+     as expected */
+  ;
+  backdrop-filter: blur(15.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 30px;
 }
 
 .startGameText {
-    margin: auto;
-    font-family: 'Steppe';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
-    /* identical to box height */
-    text-align: center;
-    /* white */
-    color: rgb(224, 52, 52);
+  width: 82px;
+  height: 29px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  /* white */
+  color: #FFFFFF;
 }
 
-.rectangle1272, .rectangle1273, .gameName {
-    border: #192F2D solid 2px;
-   
+.borderMain {
+  border: 2px solid white;
+  /*radial-gradient
+  rgba(34, 153, 235, 0.92)
+  rgba(34, 153, 235, 0.07)  
+  rgba(36, 197, 219, 1)
+  rgba(36, 197, 219, 0.26);    */
+}
+
+.footer_autor_contanier {
+  position: absolute;
+  width: 223px;
+  height: 14px;
+  left: 84px;
+  top: 40px;
+  
+}
+
+.footer_autor_text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  /* white */
+  color: #FFFFFF;
+}
+
+.footer_logo_cont {
+  position: absolute;
+  top: 2.8px;
+  left: 1602px;
 }
 
 
-.footerMenuMainCover {
-    position: absolute;
-    width: 1920px;
-    height: 100px;
-    left: 0px;
-    top: 959px;
-
-    background: #192F2D;
-}
-
-.ballImage_1 {
-    border: #192F2D dotted 1px;
-    position: absolute;
-    width: 418px;
-    height: 768px;
-    left: 416px;
-    top: 1px;
-
-    background: url(1.png);
-}
-
-.ballImage_2 {
-    border: #192F2D dotted 1px;
-    position: absolute;
-    width: 246px;
-    height: 446px;
-    left: 1116px;
-    top: 100px;
-
-    background: url(2.png);
-}
-
-/* Помогите бабушке нарядить елку */
-
-
-
-
-
-/* 1 */
+/* Зачем импортировать две идентичные картинки, одной достаточно*/
