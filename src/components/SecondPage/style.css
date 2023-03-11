@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&display=swap');
+
+.toys {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: #192F2D;
+}
+
+
+
+.container-for-second-page {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    width: 1720px;
+    box-sizing: border-box;    
+    display: grid;
+    grid-template-columns: 446px 1fr;  
+    grid-column-gap: 10px;
+
+}
+
+
+.container-for-forms {
+    background: white;
+    
+}
+
+.container-for-toys-and-text {
+    background: pink;
+    display: grid;
+    grid-template-rows: 78px minmax(342px auto);
+    overflow-y: auto;
+
+}
+.container-for-toys-and-text__text-toys {
+    height: 78px;
+
+}
+.flex-container-for-toy-cards {
+    background: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container-for-toy-cards__toy-card {
+    width: 222px;
+    height: 342px;
+    
+    background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(179, 246, 255, 0.5) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+    backdrop-filter: blur(2px);
+
+    /* Note: backdrop-filter has minimal browser support */
+    border: 0.1px solid snow;
+    border-radius: 10px;
+
+}

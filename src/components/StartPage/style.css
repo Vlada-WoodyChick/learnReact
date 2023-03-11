@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&display=swap');
 
 
-.footer {
-  position: absolute;
-  height: 100px;
-  left: 0px;
-  top: 959px;
-  background: #192F2D;
-}
+
 
 .footer_logo_cont {
   position: absolute;
@@ -151,6 +145,16 @@
   position: absolute;
   top: 2.8px;
   left: 1602px;
+}
+.footer {
+  position: absolute;
+  height: 100px;
+  left: 0px;
+  top: 970px;
+  background: #192F2D;
+  position: absolute;
+width: 1920px;
+
 }
 
 
