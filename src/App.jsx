@@ -1,4 +1,5 @@
 
+import { SecondPage } from './components/SecondPage/SecondPage'
 import { StartPage } from './components/StartPage/StartPage'
 
 function App() {
@@ -6,8 +7,8 @@ function App() {
 
   return (
     <div className="App">
-      
-      <StartPage/>
+      <SecondPage/>
+      {/* <StartPage/> */}
     </div>
   )
 }

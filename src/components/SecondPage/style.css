@@ -34,10 +34,48 @@ body {
 .container-for-forms {
     background: red;
     height: 930px;
-    box-sizing: border-box;
-    border: 0.1px solid white;
+    /* box-sizing: border-box;
+    border: 0.1px solid white; */
 
 }
+
+.music-button {
+    background: blue;
+        position: absolute;
+    top: 3.29px;
+    left: 1.8px; 
+    width: 40px; 
+    height: 32px;  
+}
+
+.music-button_dinamic {
+    display: block;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;    
+}
+
+.music-button_low-voice {
+    display: block;
+    position: absolute;
+    width: 5.3px;
+    height: 15.98px;
+    top: 6.65px;
+    left: 21.56px;
+    
+}
+
+.music-button_loud-voice {
+    display: block;
+    position: absolute;
+    width: 6.95px;
+    height: 23.95px;
+    top: 2.59px;
+    left: 25.24px;
+}
+
+
 
 .container-for-toys-and-text {
     background: pink;
