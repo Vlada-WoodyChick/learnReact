@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&display=swap');
 
-.toys {
-    position: relative;
-    width: 1920px;
-    height: 1080px;
+body {
     background: #192F2D;
+    width: 100%;
+
+}
+
+.toys {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
 }
 
 
@@ -13,42 +19,66 @@
     position: absolute;
     top: 50px;
     left: 100px;
-    width: 1720px;
-    box-sizing: border-box;    
+
+    width: auto;
+
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 446px 1fr;  
-    grid-column-gap: 10px;
+    grid-template-columns: 446px minmax(1200px, auto);
+    column-gap: 10px;
+
 
 }
 
 
 .container-for-forms {
-    background: white;
-    
+    background: red;
+    height: 930px;
+    box-sizing: border-box;
+    border: 0.1px solid white;
+
 }
 
 .container-for-toys-and-text {
     background: pink;
     display: grid;
-    grid-template-rows: 78px minmax(342px auto);
-    overflow-y: auto;
-
+    grid-template-rows: 78px 852px;
+    width: auto;
 }
+
 .container-for-toys-and-text__text-toys {
     height: 78px;
+    color: white;
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
 
 }
+
+
 .flex-container-for-toy-cards {
-    background: white;
+    background: #192F2D;
+    height: 852px;
+    width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow-y: scroll;
+    justify-content: space-around;
+
+
+
 }
 
 .flex-container-for-toy-cards__toy-card {
     width: 222px;
     height: 342px;
-    
+
     background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(179, 246, 255, 0.5) 100%)
         /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
     ;
@@ -57,5 +87,81 @@
     /* Note: backdrop-filter has minimal browser support */
     border: 0.1px solid snow;
     border-radius: 10px;
+    margin-top: 15px;
+}
 
+.toy-card {
+    display: block;
+    font-family: 'Steppe';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+
+    /* white */
+    color: #FFFFFF;
+    position: absolute;
+    left: 16px;
+
+}
+
+.toy-card_name {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 18px;
+    font-family: 'Neucha';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.toy-card_count {
+    position: absolute;
+    top: 191px;    
+}
+
+.toy-card_year {
+    position: absolute;
+    top: 215px;    
+}
+
+.toy-card_shape {
+    position: absolute;
+    top: 239px;    
+}
+
+.toy-card_color {
+    position: absolute;
+    top: 263px;    
+}
+
+.toy-card_size {
+    position: absolute;
+    top: 287px;    
+}
+
+.toy-card_do-like {
+    position: absolute;
+    top: 311px;    
+}
+
+
+
+
+
+
+.footer__second-page {
+    background: blueviolet;
+    width: 1920px;
+    height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 980px;
 }
