@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&display=swap');
 
 body {
-    background: #192F2D;
-    width: 100%;
+     background: #192F2D; 
+    width: 100%;    
+    color: hsl(0, 90%, 49%);
+
 
 }
 
@@ -19,9 +21,7 @@ body {
     position: absolute;
     top: 50px;
     left: 100px;
-
-    width: auto;
-
+    width: 100%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 446px minmax(1200px, auto);
@@ -30,7 +30,7 @@ body {
 
 
 .container-for-forms {
-    background: #192F2D;;
+    background: #192F2D;
     display: flex;
     flex-direction: column;  
     row-gap: 28px;
@@ -100,13 +100,7 @@ body {
 
 .sort-block_text {
     display: block;
-    font-family: 'Neucha';
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 22.03px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
+    }
 
 .sort-block_dropdown-button,
  .reset-button__filter-button, .reset-button__settings-button {
@@ -132,12 +126,7 @@ body {
     
 }
 
-.class-all-box_text {
-    font-family: "Neucha";
-font-weight: 400;
-font-size: 20px;
-line-height: 22.03px;
- }
+
 
 .class-all-box_checkbox-button {
     width: 14px;
@@ -179,11 +168,7 @@ line-height: 22.03px;
     flex-wrap: wrap;
     justify-content: space-around;
     justify-items: flex-start;
-    align-items: center;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14.4px;
+    align-items: center;    
     text-align: center;
      }
 
@@ -369,8 +354,6 @@ toys-form-choise-box__toys-form_bird-toy  {
     line-height: 46px;
     text-transform: uppercase;
     color: #FFFFFF;
-
-
 }
 
 
@@ -405,7 +388,7 @@ toys-form-choise-box__toys-form_bird-toy  {
 
 .toy-card {
     display: block;
-    font-family: 'Steppe';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -427,13 +410,8 @@ toys-form-choise-box__toys-form_bird-toy  {
     position: absolute;
     left: 16px;
     top: 18px;
-    font-family: 'Neucha';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: #FFFFFF;
-}
+    /* font-family: 'Neucha'; */
+    }
 
 .toy-card_count {
     position: absolute;
@@ -467,14 +445,43 @@ toys-form-choise-box__toys-form_bird-toy  {
 
 
 
+.font{
+    font-style: normal;
+  font-weight: 400;
+  color:#FFFFFF;
+}
+
+.font__neucha {
+    font-family: 'Neucha';
+    text-transform: uppercase;
+}
+
+.font__neucha_18px {
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.font__neucha_20px {
+    font-size: 20px;
+    line-height: 22.03px;
+}
+
+.font__roboto {
+    font-family: 'Roboto';
+}
+.font__roboto_12px { 
+    font-size: 12px;
+    line-height: 14.4px;
+}
 
 
 
-.footer__second-page {
+
+/* .footer__second-page {
     background: blueviolet;
     width: 1920px;
     height: 100px;
     position: absolute;
     left: 0px;
     top: 980px;
-}
+} */

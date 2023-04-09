@@ -3,6 +3,7 @@ export const toys = [
     {
       num: '1',
       name: 'Большой шар с рисунком',
+      image: './../../assets/ball_7.png',
       count: '2',
       year: '1960',
       shape: 'шар',
@@ -601,5 +602,7 @@ export const toys = [
       favorite: true,
     },
   ];
+
+  export const trees = []
   
   

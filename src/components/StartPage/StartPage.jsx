@@ -2,18 +2,15 @@ import "./style.css";
 import FooterLogo from "./../../assets/rs_school_js 1.png";
 import BallMain_1 from "./../../assets/ball_main_1.png";
 
-import MainCoverPicture from "./../../assets/annie_spratt_unsplash.png";
+//  import MainCoverPicture from "./../../assets/annie_spratt_unsplash.png";
+import { Link } from "react-router-dom";
 /* npm run dev */
 /* Границы будут одинаковые на всем main cover  странице класс borderMain
  */
 export const StartPage = () => {
   return (
     <div className="wrapper">
-      <img
-        src={MainCoverPicture}
-        alt="Еловые лапы"
-        className="mainCoverPicture"
-      />
+     
 
       <div className="toys">
         <img src={BallMain_1} alt="Шар елочный" className="ballMain_1" />
@@ -21,17 +18,24 @@ export const StartPage = () => {
       </div>
       <div className="contanierGameTitle borderMain">
         <h1 className="contanierH1">
-          <span className="textH1">Помогите бабушке нарядить елку </span>
+          <span className="textH1 font font__neucha font font__neucha_53px">Помогите бабушке нарядить елку </span>
         </h1>
       </div>
 
+
       <button className="startGameButton borderMain">
-        <a href="SecondPage.jsx"><span className="startGameText">Начать</span></a>
+        <Link to='/second'><span className="startGameText font font__roboto font__roboto_24px ">Начать</span></Link>      
+              </button>
+
+              <button className="page-3 borderMain">
+        <Link to='/third'><span className="startGameText font font__roboto font__roboto_24px">Страница 3</span></Link>      
         
       </button>
+
+
       <div className="footer">
         <div className="footer_autor_contanier">
-          <span className="footer_autor_text">Vlada</span>
+          <span className="footer_autor_text font font__roboto font__roboto_12px">Vlada</span>
         </div>
 
         <div className="footer_logo_cont">
@@ -39,22 +43,7 @@ export const StartPage = () => {
         </div>
       </div>
     </div>
-    /*{<div className="mainCover"></div>
-      <div className="rectangle1272">
-        <h1> <div className="gameName">
-          <div className="words_11">Помогите бабушке</div>
-          <div className="words_12">нарядить елку</div>
-        </div>
-        </h1>
-      </div>
-
-      <button className="rectangle1273">
-        <div className="startGameText">Начать игру</div>
-      </button>
-      <div className="ballImage_1"></div>
-      <div className="ballImage_2" ></div>
-
-      <footer className="footerMenuMainCover"></footer> } */
+    
   );
 };
 /*<button class="to-game reset">Начать игру</button>; */

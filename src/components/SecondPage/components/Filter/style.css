@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Roboto&display=swap');
+
+.box {  
+    background: #192F2D;
+    box-sizing: border-box;
+}
+
+.box__form-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.font {
+    color:white;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font__roboto {
+    font-family: 'Roboto';
+    
+}
+ .font__neucha{
+    font-family: 'Neucha';
+ }
+
+ .font__12px {
+    font-size: 12px;
+    line-height: 14.4px;
+    }
+
+.font__16px {
+font-size: 16px;
+line-height: 19.2px;
+}
+.font__18px {
+    font-size: 18px;
+    line-height: 21.6px;
+    }
+.font__20px {
+    font-size: 20px;
+    line-height: 22.03px;
+}
+
+
+
+.border {
+    border: 2px solid white;
+   }
+
+   .border__radius_30 {
+    border-radius: 30px;
+   }
+
+   .border__radius_5 {
+    border-radius: 5px;
+   }
+
+
+
+
+   .box__row-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   }
+
+
+
+.input__search-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-text_toy-search {
+    width: 70%;
+}
+
+   .search-box_loupe {    
+    display: block;
+    width: 17.49px;
+    height: 17.49px;
+}
+
