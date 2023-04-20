@@ -10,6 +10,8 @@ import Star from "./../../../../assets/star.png";
 import Snowflake from "./../../../../assets/snowflake.png";
 import BirdToy from "./../../../../assets/bird_toy.png";
 import { Link } from "react-router-dom";
+import {NavigateButtons} from "./../NavigateButtons/NavigateButtons"
+import { Button } from "../../../../shared/componets/Button/Button";
 
 
 export const Filter = () => {
@@ -274,10 +276,17 @@ export const Filter = () => {
 
 
 <div className="button  reset-button">
-<button className="reset-button__filter-button">Сбросить фильтры</button>
-<button className="reset-button__settings-button">Сбросить настройки</button>
-<Link to='/start'><button className="reset-button__filter-button">Страница 1</button></Link>
-<Link to='/third'><button className="reset-button__settings-button">Страница 3</button></Link>
+  <Button title={"Сбросить фильтры"}
+          btnClass="reset-button__settings-button"
+          spanClass="reset-button__settings-button"/>
+          <Button title={"Сбросить настройки"}
+          btnClass="reset-button__settings-button"
+          spanClass="reset-button__settings-button"/>
+
+
+<NavigateButtons/>
+{/* <Link to='/start'><button className="reset-button__filter-button">Страница 1</button></Link>
+<Link to='/third'><button className="reset-button__settings-button">Страница 3</button></Link> */}
 </div>
 
 

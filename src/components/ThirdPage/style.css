@@ -78,11 +78,13 @@
     align-content: flex-start;
     row-gap: 16px;
     column-gap: 16px;
+
 }
 
 .checkbox-tree-option__button {
     width: 134px;
     height: 134px;
+    
 }
 
 
@@ -94,7 +96,7 @@
     row-gap: 8px;
 }
 
-.backgroun-box__item {
+.backgroun-box__item, result-box__toys-box-item, result-box__toy-box  {
 background: whitesmoke;
     width: 68px;
     height: 68px;    
@@ -116,7 +118,7 @@ background: whitesmoke;
 .garland-option-box__item{
     width: unset;
     height: 10px;
-    background: #6fece2;
+    background: SmallView
 }
 
 
@@ -146,9 +148,9 @@ background: whitesmoke;
 }
 
 
-.result-box {
+/* .result-box {
     background: pink;
-}
+} */
 
 
 
@@ -159,3 +161,33 @@ background: whitesmoke;
     height: 100px;
     width: 100%;
 }
+
+
+.tree-option-box__element {
+    background: radial-gradient(109.56% 109.56% at 0% -2.94%, rgba(255, 255, 255, 0.5) 0%, rgba(179, 246, 255, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.tree-option-box__element_large, .result-box__tree-box-item  {
+    width: 134px;
+    height: 134px;
+}
+
+
+
+
+.result-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #192F2D;
+}
+.result-box__toys-box, .result-box__tree-box {
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap;
+  gap: 5px;
+}
+/* result-box__toy-box */
+
+

@@ -2,6 +2,8 @@ import "./style.css";
 import Dinamic from "./../../assets/music-button-dinamic.png";
 import SnowflakeButton from "./../../assets/button_noun_Snowflake_4336155 1.png";
 import { Link } from "react-router-dom";
+import {LargeView} from "./components/LargeView/LargeView"
+import { Button } from "../../shared/componets/Button/Button";
 
 export const ThirdPage = () => {
   return (
@@ -29,33 +31,12 @@ export const ThirdPage = () => {
               </span>
 
               <div className="checkbox-tree-option__box">
-                <input
-                  type="checkbox"
-                  name="checkbox-tree-option-1"
-                  value=""
-                  className="checkbox-tree-option__button"
-                />
+                <LargeView viewSize="tree-option-box tree-option-box__element tree-option-box__element_large border"/> 
+                <LargeView viewSize="tree-option-box tree-option-box__element tree-option-box__element_large border"/> 
+                <LargeView viewSize="tree-option-box tree-option-box__element tree-option-box__element_large border"/> 
+                <LargeView viewSize="tree-option-box tree-option-box__element tree-option-box__element_large border"/>   
 
-                <input
-                  type="checkbox"
-                  name="checkbox-tree-option-2"
-                  value=""
-                  className="checkbox-tree-option__button"
-                />
-
-                <input
-                  type="checkbox"
-                  name="checkbox-tree-option-3"
-                  value=""
-                  className="checkbox-tree-option__button"
-                />
-
-                <input
-                  type="checkbox"
-                  name="checkbox-tree-option-4"
-                  value=""
-                  className="checkbox-tree-option__button"
-                />
+               
               </div>
             </div>
 
@@ -65,14 +46,15 @@ export const ThirdPage = () => {
               </span>
 
               <div className="backgroun-box__block">
-                <div className="backgroun-box__item"></div>
-                <div className="backgroun-box__item"></div>
-                <div className="backgroun-box__item"></div>
-                <div className="backgroun-box__item"></div>
-                <div className="backgroun-box__item"></div>
-                <div className="backgroun-box__item"></div>
-                <div className="backgroun-box__item"></div>
-                <div className="backgroun-box__item"></div>
+              <LargeView viewSize="backgroun-box__item tree-option-box__element border"/> 
+              <LargeView viewSize="backgroun-box__item tree-option-box__element border"/> 
+              <LargeView viewSize="backgroun-box__item tree-option-box__element border"/> 
+              <LargeView viewSize="backgroun-box__item tree-option-box__element border"/> 
+              <LargeView viewSize="backgroun-box__item tree-option-box__element border"/> 
+              <LargeView viewSize="backgroun-box__item tree-option-box__element border"/> 
+
+
+                
               </div>
             </div>
 
@@ -88,7 +70,11 @@ export const ThirdPage = () => {
             </div>
 
             <div className="button  reset-button">
-              <button className="reset-button__filter-button">
+<Button title={'Сбросить фильтры'}  btnClass="reset-button__filter-button"/>
+<Button title={'Сбросить настройки'}  btnClass="reset-button__filter-button"/>
+<Link to='/start'><Button title={'Страница 1'} btnClass="reset-button__filter-button"/> </Link>
+<Link to='/second'><Button title={'Страница 2'} btnClass="reset-button__filter-button"/> </Link>
+              {/* <button className="reset-button__filter-button">
                 Сбросить фильтры
               </button>
               <button className="reset-button__settings-button">
@@ -99,15 +85,54 @@ export const ThirdPage = () => {
               </button></Link>
               <Link to='/second'>  <button className="reset-button__settings-button">
               Страница 2
-              </button></Link>
+              </button></Link> */}
+              <Button title={'loren'}/>
             
             </div>
           </form>
         </div>
 
+
+
         <div className="nice-background-box"></div>
 
-        <div className="result-box"></div>
+
+
+
+        <div className="result-box">
+
+          <div className="text-content text-content__Neucha-font text-content__Neucha-font_20">Игрушки</div>
+
+          <div className="result-box__toys-box ">
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>
+            <LargeView viewSize="backgroun-box__item tree-option-box__element border"/>          
+          </div>
+
+          <div className="result-box__tree-box" >
+            <div className="text-content text-content__Neucha-font text-content__Neucha-font_20">Вы нарядили</div>
+<div className="result-box__tree-box">
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+<LargeView viewSize="tree-option-box__element result-box__tree-box result-box__tree-box-item  tree-option-box__element_large border"/>
+</div>
+
+          </div>
+
+
+        </div>
       </div>
 
       {/* <div className="footer footer__third-page-footer"></div> */}

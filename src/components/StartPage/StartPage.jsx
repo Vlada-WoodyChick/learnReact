@@ -1,9 +1,11 @@
 import "./style.css";
 import FooterLogo from "./../../assets/rs_school_js 1.png";
 import BallMain_1 from "./../../assets/ball_main_1.png";
-
+import BallMain_2 from "./../../assets/ball_main_2.png";
+import {BallsStartPage} from "./components/BallsStartPage";
 //  import MainCoverPicture from "./../../assets/annie_spratt_unsplash.png";
 import { Link } from "react-router-dom";
+import { Button } from "../../shared/componets/Button/Button";
 /* npm run dev */
 /* Границы будут одинаковые на всем main cover  странице класс borderMain
  */
@@ -13,24 +15,25 @@ export const StartPage = () => {
      
 
       <div className="toys">
-        <img src={BallMain_1} alt="Шар елочный" className="ballMain_1" />
-        <img src={BallMain_1} alt="Шар елочный" className="ballMain_2" />
+        <BallsStartPage ballSize={{BallMain_1}} ballProps="ballMain_1" />
+        {/* <img src={BallMain_1} alt="Шар елочный" className="ballMain_1" />
+        <img src={BallMain_1} alt="Шар елочный" className="ballMain_2" /> */}
       </div>
       <div className="contanierGameTitle borderMain">
         <h1 className="contanierH1">
           <span className="textH1 font font__neucha font font__neucha_53px">Помогите бабушке нарядить елку </span>
         </h1>
       </div>
-
-
-      <button className="startGameButton borderMain">
-        <Link to='/second'><span className="startGameText font font__roboto font__roboto_24px ">Начать</span></Link>      
-              </button>
+        <Link to='/second'><Button title={'Начать'} btnClass="startGameButton borderMain" spanClass="startGameText font font__roboto font__roboto_24px "/> </Link>
+        <Link to='/third'><Button title={'Страница 3'} btnClass="page-3 borderMain" spanClass="startGameText font font__roboto font__roboto_24px "/> </Link>
+      
+        {/* <Link to='/second'><button className="startGameButton borderMain"><span className="startGameText font font__roboto font__roboto_24px ">Начать</span></button></Link>      
+              
 
               <button className="page-3 borderMain">
         <Link to='/third'><span className="startGameText font font__roboto font__roboto_24px">Страница 3</span></Link>      
         
-      </button>
+      </button> */}
 
 
       <div className="footer">
