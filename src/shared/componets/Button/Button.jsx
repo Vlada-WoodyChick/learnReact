@@ -1,6 +1,6 @@
 
-export const Button = (props) => {
+export const Button = ({btnClass, spanClass, title}) => {
     return (
-        <button className={props.btnClass}><span className={props.spanClass}>{props.title}</span></button>
+        <button className={btnClass}><span className={spanClass}>{title}</span></button>
     )
 }
