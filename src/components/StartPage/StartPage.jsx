@@ -6,10 +6,16 @@ import {BallsStartPage} from "./components/BallsStartPage";
 //  import MainCoverPicture from "./../../assets/annie_spratt_unsplash.png";
 import { Link } from "react-router-dom";
 import { Button } from "../../shared/componets/Button/Button";
+import { json } from "react-router-dom";
+
 /* npm run dev */
 /* Границы будут одинаковые на всем main cover  странице класс borderMain
  */
 export const StartPage = () => {
+
+
+  // const get
+
   return (
     <div className="wrapper">
      
