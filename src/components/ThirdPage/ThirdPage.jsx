@@ -7,7 +7,8 @@ import { Button } from "../../shared/componets/Button/Button";
 
 export const ThirdPage = () => {
   return (
-    <div className="third-page">
+  <div className="third-page">
+    
       <div className="third-page__content ">
         <div className="option-box">
           <form action="#" className="container-for-forms">
@@ -138,4 +139,4 @@ export const ThirdPage = () => {
       {/* <div className="footer footer__third-page-footer"></div> */}
     </div>
   );
-};
+ };
